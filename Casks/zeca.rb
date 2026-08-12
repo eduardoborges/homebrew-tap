@@ -3,7 +3,7 @@ cask "zeca" do
   sha256 "0b1ca470ffe05a7e368b0b144d7c209e26aa93b500b112e374c41ae1a7b5f21c"
 
   url "https://github.com/eduardoborges/zeca/releases/download/v#{version}/ZecaAI.dmg"
-  name "Zeca AI"
+  name "Zeca"
   desc "Meeting recorder with on-device transcription and AI summaries"
   homepage "https://zeca.eduardoborges.dev"
 
@@ -18,6 +18,7 @@ cask "zeca" do
 
   zap trash: [
     "~/Library/Application Support/ZecaAI",
+    "~/Library/Preferences/com.zeca.Zeca.plist",
     "~/Library/Preferences/com.zeca.ZecaAI.plist",
   ]
 
