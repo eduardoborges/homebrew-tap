@@ -5,7 +5,7 @@ class Yabai < Formula
       revision: "e694eaa33ee230dd5bbf4df9131e662dc61530ba"
   version "7.1.25"
   license "MIT"
-  revision 1
+  revision 2
   head "https://github.com/eduardoborges/yabai.git", branch: "macos-27"
 
   depends_on xcode: :build
@@ -14,9 +14,6 @@ class Yabai < Formula
 
   def install
     system "make", "-j1", "install"
-    if quiet_system "security", "find-certificate", "-c", "yabai-cert"
-      system "codesign", "-fs", "yabai-cert", "bin/yabai"
-    end
     bin.install "bin/yabai"
     (pkgshare/"examples").install "examples/yabairc", "examples/skhdrc"
     man1.install "doc/yabai.1"
@@ -24,7 +21,8 @@ class Yabai < Formula
 
   def caveats
     <<~EOS
-      If your keychain has a code signing certificate named yabai-cert, the binary is signed with it and keeps its Accessibility and Screen Recording permissions across upgrades.
+      The build sandbox can't read your keychain. Sign the binary after every install or upgrade so it keeps its Accessibility and Screen Recording permissions:
+        codesign -fs yabai-cert /opt/homebrew/Cellar/yabai/7.1.25_2/bin/yabai
 
       The scripting-addition sudoers entry is pinned to the binary hash, so update it after every install or upgrade. Edit it with:
         sudo visudo -f /private/etc/sudoers.d/yabai
