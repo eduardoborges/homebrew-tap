@@ -6,7 +6,7 @@ class Yabai < Formula
   version "7.1.25"
   license "MIT"
   revision 2
-  head "https://github.com/eduardoborges/yabai.git", branch: "macos-27"
+  head "https://github.com/eduardoborges/yabai.git", branch: "master"
 
   depends_on xcode: :build
   depends_on arch: :arm64
