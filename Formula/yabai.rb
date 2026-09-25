@@ -22,7 +22,7 @@ class Yabai < Formula
   def caveats
     <<~EOS
       The build sandbox can't read your keychain. Sign the binary after every install or upgrade so it keeps its Accessibility and Screen Recording permissions:
-        codesign -fs yabai-cert /opt/homebrew/Cellar/yabai/7.1.25_2/bin/yabai
+        codesign -fs yabai-cert $(readlink -f $(which yabai))
 
       The scripting-addition sudoers entry is pinned to the binary hash, so update it after every install or upgrade. Edit it with:
         sudo visudo -f /private/etc/sudoers.d/yabai
