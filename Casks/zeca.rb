@@ -1,6 +1,6 @@
 cask "zeca" do
-  version "1.5.0"
-  sha256 "40f15884ef357d71e96519f1143c64d15c16f9daf7a84af4acea1761023074c3"
+  version "1.6.0"
+  sha256 "473846a57eea4e3b5565e7720fb0d1462fbe052a4b9b0da093eb7c1cdb12fb88"
 
   url "https://github.com/eduardoborges/zeca/releases/download/v#{version}/Zeca.dmg"
   name "Zeca"
