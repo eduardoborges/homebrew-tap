@@ -3,5 +3,5 @@
 ```bash
 brew install --cask eduardoborges/tap/zeca
 brew install --cask eduardoborges/tap/droidhub
-brew install --cask eduardoborges/tap/tally
+brew install --cask eduardoborges/tap/claudio
 ```
