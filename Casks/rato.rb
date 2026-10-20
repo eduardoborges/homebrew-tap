@@ -1,6 +1,6 @@
 cask "rato" do
-  version "0.1.0"
-  sha256 "3603a4d411e2259e2e18395e3f8c0f7395372e5d1668bfbad454fdd93ef0ad0e"
+  version "0.1.1"
+  sha256 "3f6826b5eee70a45a9b17a688415a54f7d59ee9b594b48ee5cc58b89d80d4610"
 
   url "https://github.com/eduardoborges/rato/releases/download/v#{version}/Rato.dmg"
   name "Rato"
