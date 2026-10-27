@@ -2,10 +2,10 @@ class Yabai < Formula
   desc "Tiling window manager for macOS based on binary space partitioning"
   homepage "https://github.com/eduardoborges/yabai"
   url "https://github.com/eduardoborges/yabai.git",
-      revision: "e694eaa33ee230dd5bbf4df9131e662dc61530ba"
+      revision: "8467dc8a94f9b9b88f027f4fc3abe4b221e3dee3"
   version "7.1.25"
   license "MIT"
-  revision 2
+  revision 3
   head "https://github.com/eduardoborges/yabai.git", branch: "master"
 
   depends_on xcode: :build
