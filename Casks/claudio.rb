@@ -1,6 +1,6 @@
 cask "claudio" do
-  version "0.3.0"
-  sha256 "e8957dd57f298e1accd0106fcfdce67d43294ce6484462197ce3a6b3333a4256"
+  version "0.4.0"
+  sha256 "ce8b72b6aa95bf61e37f4cbaf95aef52cebd1c158d682199eabe688767af70a9"
 
   url "https://github.com/eduardoborges/claudio/releases/download/v#{version}/Claudio.dmg"
   name "Claudio"
