@@ -1,10 +1,10 @@
 cask "rato" do
-  version "0.2.0"
-  sha256 "d63b6f1da61984ae87ed7b884e91e7cded09a178d7d04678aa29ae1ed9b5660e"
+  version "0.3.0"
+  sha256 "60776f1ef6647d3eecbaff4d37bb18d112a73d041489a0aed47b505dd1ad39a0"
 
   url "https://github.com/eduardoborges/rato/releases/download/v#{version}/Rato.dmg"
   name "Rato"
-  desc "Logitech mouse battery, DPI, polling rate and lighting in the menu bar"
+  desc "Battery, DPI and polling rate for Logitech, ATK and VXE mice in the menu bar"
   homepage "https://github.com/eduardoborges/rato"
 
   livecheck do
