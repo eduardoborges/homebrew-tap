@@ -1,6 +1,6 @@
 cask "droidhub" do
-  version "0.1.1"
-  sha256 "49bacbfa67276d2f6c707bae8fa8d21eaef5d4a06a65f815b902aca23b07d809"
+  version "0.3.0"
+  sha256 "434a5f375a05c09a27a8c148e2355b9fa44d85ae3dc3a428d55201132fb192f6"
 
   url "https://github.com/eduardoborges/droidhub/releases/download/v#{version}/DroidHub.dmg"
   name "DroidHub"
